@@ -11,7 +11,7 @@ test("reverseString()", () => {
   expect(reverseString("reverse")).toBe("esrever");
 })
 
-describe("Testing calculator", () => {
+describe("Testing calculator object", () => {
   test("Is defined", () => {
     expect(calculator).toBeDefined();
   });
