@@ -11,6 +11,7 @@ test("reverseString()", () => {
   expect(reverseString("lackadaisically")).toBe("yllacisiadakcal");
   expect(reverseString("quite")).toBe("etiuq");
   expect(reverseString("reverse")).toBe("esrever");
+  expect(reverseString("kuma🐻")).toBe("🐻amuk");
 });
 
 describe("Testing calculator object", () => {
