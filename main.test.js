@@ -20,4 +20,9 @@ describe("Testing calculator object", () => {
     expect(calculator.add(10, 100)).toBe(110);
     expect(calculator.add(1024, 1024)).toBe(2048);
   })
+  test("subtract()", () => {
+    expect(calculator.subtract(0, 10)).toBe(-10);
+    expect(calculator.subtract(64, 16)).toBe(48);
+    expect(calculator.subtract(999, 111)).toBe(888);
+  })
 })
