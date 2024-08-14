@@ -19,5 +19,8 @@ export const calculator = (() => {
     divide(x, y) {
       return x / y;
     }
+    multiply(x, y) {
+      return x * y;
+    }
   }
 })();
