@@ -25,3 +25,15 @@ export const calculator = (() => {
   }
   return new Calculator();
 })();
+
+export function caesarCipher(string, shiftFactor) {
+  let stringList = string.split(/(?:)/u);
+  const carriedShiftFactor = shiftFactor % 26;
+  stringList = stringList.map((char) => {
+    if (char.match(/[a-z][A-Z]/)) {
+      return String.fromCharCode(char.charCodeAt(0) + carriedShiftFactor);
+    }
+    return char;
+  });
+  return stringList.join("");
+}
