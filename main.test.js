@@ -30,4 +30,9 @@ describe("Testing calculator object", () => {
     expect(calculator.divide(128, 2)).toBe(64);
     expect(calculator.divide(27, 3)).toBe(9);
   });
+  test("multiply()", () => {
+    expect(calculator.multiply(9, 9)).toBe(81);
+    expect(calculator.multiply(100, 10)).toBe(1000);
+    expect(calculator.multiply(8192, 2)).toBe(16384);
+  });
 })
