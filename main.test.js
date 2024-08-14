@@ -25,4 +25,9 @@ describe("Testing calculator object", () => {
     expect(calculator.subtract(64, 16)).toBe(48);
     expect(calculator.subtract(999, 111)).toBe(888);
   })
+  test("divide()", () => {
+    expect(calculator.divide(10, 2)).toBe(5);
+    expect(calculator.divide(128, 2)).toBe(64);
+    expect(calculator.divide(27, 3)).toBe(9);
+  });
 })
