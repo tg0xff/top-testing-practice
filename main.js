@@ -30,8 +30,18 @@ export function caesarCipher(string, shiftFactor) {
   let stringList = string.split(/(?:)/u);
   const carriedShiftFactor = shiftFactor % 26;
   stringList = stringList.map((char) => {
-    if (char.match(/[a-z][A-Z]/)) {
-      return String.fromCharCode(char.charCodeAt(0) + carriedShiftFactor);
+    let newCharCode = char.charCodeAt(0) + carriedShiftFactor;
+    if (char.match(/[A-Z]/)) {
+      if (newCharCode > 90) {
+        newCharCode = newCharCode - 26;
+      }
+      return String.fromCharCode(newCharCode);
+    }
+    if (char.match(/[a-z]/)) {
+      if (newCharCode > 122) {
+        newCharCode = newCharCode - 26;
+      }
+      return String.fromCharCode(newCharCode);
     }
     return char;
   });
