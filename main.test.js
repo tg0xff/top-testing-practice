@@ -42,3 +42,9 @@ test("caesarCipher()", () => {
   expect(caesarCipher("HeLLo", 3)).toBe("KhOOr");
   expect(caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
 });
+
+test("analyzeArray()", () => {
+  expect(analyzeArray([1,8,3,4,2,6])).toEqual({average: 4, min: 1, max: 8, length: 6});
+  expect(analyzeArray([97,61,20,94,13,96])).toEqual({average: 63, min: 13, max: 97, length: 6});
+  expect(analyzeArray([6,65,88,11])).toEqual({average: 42, min: 6, max: 88, length: 4});
+});
