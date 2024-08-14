@@ -7,3 +7,11 @@ export function capitalize(string) {
 export function reverseString(string) {
   return string.split(/(?:)/u).reverse().join("");
 }
+
+export const calculator = (() => {
+  class Calculator {
+    add(x, y) {
+      return x + y;
+    }
+  }
+})();
