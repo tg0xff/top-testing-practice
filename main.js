@@ -23,4 +23,5 @@ export const calculator = (() => {
       return x * y;
     }
   }
+  return new Calculator();
 })();
