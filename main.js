@@ -51,9 +51,9 @@ export function caesarCipher(string, shiftFactor) {
 export function analyzeArray(arr) {
   const analysis = {};
   analysis.length = arr.length;
-  analysis.min = arr.reduce((prev, cur) => (cur < prev) ? cur : prev);
-  analysis.max = arr.reduce((prev, cur) => (cur > prev) ? cur : prev);
-  const sum = arr.reduce((total, cur) => total + cur, 0)
+  analysis.min = arr.reduce((prev, cur) => (cur < prev ? cur : prev));
+  analysis.max = arr.reduce((prev, cur) => (cur > prev ? cur : prev));
+  const sum = arr.reduce((total, cur) => total + cur, 0);
   analysis.average = Math.floor(sum / arr.length);
   return analysis;
 }
