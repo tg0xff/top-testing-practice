@@ -10,3 +10,14 @@ test("reverseString()", () => {
   expect(reverseString("quite")).toBe("etiuq");
   expect(reverseString("reverse")).toBe("esrever");
 })
+
+describe("Testing calculator", () => {
+  test("Is defined", () => {
+    expect(calculator).toBeDefined();
+  });
+  test("add()", () => {
+    expect(calculator.add(3, 5)).toBe(8);
+    expect(calculator.add(10, 100)).toBe(110);
+    expect(calculator.add(1024, 1024)).toBe(2048);
+  })
+})
