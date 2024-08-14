@@ -36,3 +36,9 @@ describe("Testing calculator object", () => {
     expect(calculator.multiply(8192, 2)).toBe(16384);
   });
 })
+
+test("caesarCipher()", () => {
+  expect(caesarCipher("xyz", 3)).toBe("abc");
+  expect(caesarCipher("HeLLo", 3)).toBe("KhOOr");
+  expect(caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
+});
