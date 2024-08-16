@@ -25,25 +25,17 @@ describe("reverseString()", () => {
 });
 
 describe("Testing calculator object", () => {
-  describe("add()", () => {
-    test("Test 1024 + 1024", () => {
-      expect(calculator.add(1024, 1024)).toBe(2048);
-    });
+  test("Test 1024 + 1024", () => {
+    expect(calculator.add(1024, 1024)).toBe(2048);
   });
-  describe("subtract()", () => {
-    test("Test 0 - 10", () => {
-      expect(calculator.subtract(0, 10)).toBe(-10);
-    });
+  test("Test 0 - 10", () => {
+    expect(calculator.subtract(0, 10)).toBe(-10);
   });
-  describe("divide()", () => {
-    test("Test 128 / 2", () => {
-      expect(calculator.divide(128, 2)).toBe(64);
-    });
+  test("Test 128 / 2", () => {
+    expect(calculator.divide(128, 2)).toBe(64);
   });
-  describe("multiply()", () => {
-    test("Test 8192 * 2", () => {
-      expect(calculator.multiply(8192, 2)).toBe(16384);
-    });
+  test("Test 8192 * 2", () => {
+    expect(calculator.multiply(8192, 2)).toBe(16384);
   });
 });
 
